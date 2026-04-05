@@ -1,0 +1,191 @@
+/* ===============================
+   1. Reset default margins/paddings
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   2. Body and Background
+================================= */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://wallpapers.com/images/hd/travel-background-613yzbmemikozd15.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #000080;
+}
+
+/* ===============================
+   3. Navbar
+================================= */
+.navbar {
+	position: fixed;      /* sticks to top */
+    top: 0;
+    left: 0;
+    width: 100%;          /* full width */
+    z-index: 999; 
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar div:last-child {
+    display: flex;
+    gap: 15px; /* space between links */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   4. Container / Centered Content
+================================= */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* top-to-bottom */
+    align-items: center;    /* center horizontally */
+    gap: 20px;              /* space between cards */
+}
+
+/* ===============================
+   5. Card / Form Box
+================================= */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 500px;
+    text-align: center; /* center content inside card */
+}
+/* ===============================
+   6. Forms / Inputs
+================================= */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"],
+button,
+.btn {
+    display: inline-block;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+    margin: 5px 0;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.btn:hover {
+    background: #0056b3;
+}
+
+/* ===============================
+   7. Tables
+================================= */
+.table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: white;
+}
+
+.table th,
+.table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background: #333;
+    color: white;
+}
+
+/* ===============================
+   8. Headers / Titles
+================================= */
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   9. Login / Register Pages
+================================= */
+.login-bg,
+.register-bg,
+.home-bg {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===============================
+   10. Booking / Action Buttons
+================================= */
+.btn-book {
+    padding: 8px 16px;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    transition: background 0.3s;
+}
+
+.btn-book:hover {
+    background: #218838;
+}
+
+/* ===============================
+   11. Responsive Design
+================================= */
+@media (max-width: 768px) {
+    .container {
+        margin: 30px 10px;
+    }
+    .card {
+        max-width: 90%;
+    }
+}
